@@ -209,7 +209,7 @@ ul {
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap: 20px;
+  grid-gap: 15px;
 }
 
 /* Card */
@@ -496,10 +496,9 @@ section h2 {
   font-weight: 600;
 }
 
-/* Responsive Design */
-
 /* Mobile Devices (max-width: 480px) */
 @media only screen and (max-width: 480px) {
+  /* Add your mobile-specific styles here */
   .container {
     max-width: 100%;
     padding: 0;
@@ -508,7 +507,6 @@ section h2 {
     padding: 10px;
     display: flex;
     flex-direction: column;
-
   }
   .main-header ul {
     margin-top: -30px;
@@ -528,7 +526,7 @@ section h2 {
     font-size: 16px;
   }
   .grid {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
   }
   .card {
     padding: 10px;
@@ -585,6 +583,7 @@ section h2 {
     align-items: center;
   }
   .search .container form {
+    margin-top: 20px;
     width: 100%;
     max-width: 300px;
   }
@@ -605,6 +604,7 @@ section h2 {
 
 /* Tablets (max-width: 768px) */
 @media only screen and (max-width: 768px) {
+  /* Add your tablet-specific styles here */
   .container {
     max-width: 80%;
     padding: 0 20px;
@@ -630,14 +630,14 @@ section h2 {
     font-size: 18px;
   }
   .grid {
-    grid-template-columns: repeat(auto-fit, minmax(163px, 0fr));
+    grid-template-columns: repeat(auto-fit, minmax(130px, 0fr));
     padding: auto;
   }
   .card {
     padding: 0;
   }
   .card-body {
-    padding: 20px;
+    padding: 10px;
     font-size: 18px;
   }
   .main-footer {
@@ -667,7 +667,7 @@ section h2 {
   }
   .details-top p {
     margin: 15px 0;
-  }
+  } 
   .details-top h5 {
     font-size: 20px;
   }
@@ -677,7 +677,6 @@ section h2 {
   .details-bottom h2 {
     font-size: 20px;
   }
-
   section.now-playing {
     padding: 20px;
     background-position: center;
@@ -699,5 +698,12 @@ section h2 {
     height: 100%;
     object-fit: cover;
   }
+  .search .container form button {
+    margin-top: 20px;
+    margin-bottom: -20px;
+  }
+
+  .search .container form input[type='text'] {
+    padding: 10px auto;
+  }
 }
- 
