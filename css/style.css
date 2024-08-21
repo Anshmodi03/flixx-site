@@ -512,7 +512,10 @@ section h2 {
     margin-top: -30px;
   }
   .main-header ul li {
-    margin-left: 0px;
+    margin-left: 20px;
+  }
+  .main-header .logo {
+    margin-left: -30px;
   }
   .main-header ul li a {
     font-size: 14px;
@@ -616,7 +619,10 @@ section h2 {
     margin-top: -40px;
   }
   .main-header ul li {
-    margin-left: 15px;
+    margin-left: 20px;
+  }
+  .main-header .logo {
+    margin-left: -30px;
   }
   .main-header ul li a {
     font-size: 16px;
@@ -630,7 +636,7 @@ section h2 {
     font-size: 18px;
   }
   .grid {
-    grid-template-columns: repeat(auto-fit, minmax(130px, 0fr));
+    grid-template-columns: repeat(auto-fit, minmax(115px, 0fr));
     padding: auto;
   }
   .card {
