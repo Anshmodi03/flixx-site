@@ -9,10 +9,11 @@ const global = {
   },
 
   api: {
-    apiKey: process.env.API_KEY,
+    apiKey: 'e84138f418be87db4b3df51692721f3d',
     apiUrl: 'https://api.themoviedb.org/3/',
   },
 };
+
 
 // Rest of your code...
 // Display 20 most popular movies
