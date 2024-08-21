@@ -1,0 +1,86 @@
+.spinner {
+  position: fixed;
+  inset: 0;
+  display: none;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+  z-index: 99999;
+  backdrop-filter: blur(7px);
+}
+
+.spinner.show {
+  display: grid; /* add this to make the spinner visible when .show class is added */
+}
+
+.spinner h1 {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 80px; /* larger font size */
+  color: #ffffff;
+  opacity: 1;
+  text-shadow: 3px 3px 3px rgba(251, 251, 251, 0.93),
+             -4px 6px 6px rgb(238, 238, 238);
+}
+
+.spinner span {
+  position:static;
+  top: 0.63em;  
+  display: inline-block;
+  text-transform: uppercase;  
+  opacity: 0;
+  transform: rotateX(-90deg);
+}
+
+.spinner .let1 {
+  animation: drop 1s ease-in-out infinite;
+}
+
+.spinner .let2 {
+  animation: drop 1s ease-in-out infinite;
+}
+
+.spinner .let3 {
+  animation: drop 1s ease-in-out infinite;
+}
+
+.spinner .let4 {
+  animation: drop 1s ease-in-out infinite;
+}
+
+.spinner .let5 {
+  animation: drop 1s ease-in-out infinite;
+}
+
+.spinner .let6 {
+  animation: drop 1s ease-in-out infinite;
+}
+
+.spinner .let7 {
+  animation: drop 1s ease-in-out infinite;
+}
+
+@keyframes drop {
+  10% {
+    opacity: 0.5;
+  }
+  20% {
+    opacity: 1;
+    top: 3.78em;
+    transform: rotateX(-360deg);
+  }
+  80% {
+    opacity: 1;
+    top: 3.78em;
+    transform: rotateX(-360deg);
+  }
+  90% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+    top: 6.94em
+  }
+}
