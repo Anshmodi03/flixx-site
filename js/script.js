@@ -14,13 +14,13 @@ const global = {
   },
 };
 
-
 // Rest of your code...
-// Display 20 most popular movies
+// Display 12 most popular movies
 async function displayPopularMovies() {
   const { results } = await fetchAPIData('movie/popular');
+  const top10Movies = results.slice(0, 12); // Get only the top 12 movies
 
-  results.forEach((movie) => {
+  top10Movies.forEach((movie) => {
     const div = document.createElement('div');
     div.classList.add('card');
     div.innerHTML = `
@@ -51,11 +51,12 @@ async function displayPopularMovies() {
   });
 }
 
-// Display 20 most popular tv shows
+// Display 12 most popular tv shows
 async function displayPopularShows() {
   const { results } = await fetchAPIData('tv/popular');
+  const top10Shows = results.slice(0, 12); // Get only the top 12 shows
 
-  results.forEach((show) => {
+  top10Shows.forEach((show) => {
     const div = document.createElement('div');
     div.classList.add('card');
     div.innerHTML = `
@@ -493,6 +494,7 @@ function init() {
       displayPopularMovies();
       break;
     case '/shows.html':
+      
       displayPopularShows();
       break;
     case '/movie-details.html':
