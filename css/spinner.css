@@ -84,3 +84,8 @@
     top: 6.94em
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .spinner h1 {
+    font-size: 40px;
+  }
